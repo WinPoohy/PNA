@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ЛР №1 - МГТУ им. Баумана</title>
+    <script type="text/javascript" src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header class="bmstu-header">
+        <div class="header-left">
+            <a href="index.html" class="logo-link">
+                <img src="assets/bmstu-logo.png" class="crest-mini" alt="Герб МГТУ">
+            </a>
+        </div>
+
+        <div class="header-right">
+            <div class="header-item">
+                <img src="assets/calendar.png" class="h-icon">
+                <span>6 | зн</span>
+            </div>
+            <div class="header-item">
+                <img src="assets/user.png" class="h-icon">
+                <span>Войти</span>
+            </div>
+            <div class="header-item">
+                <img src="assets/grid.png" class="h-icon">
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+            <h2>Автор работы</h2>
+            <p>Студент: <b>Степанов Андрей Дмитриевич</b></p>
+            <p>Группа: <b>ИУ5-46Б</b></p>
+            <a href="https://github.com/WinPoohy" class="github-link" target="_blank">Мой GitHub</a>
+    </main>
+
+    <footer class="bmstu-footer">
+        <p>ЛР выполнена: Степанов А.Д.</p>
+    </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>

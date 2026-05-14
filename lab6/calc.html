@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>ЛР №1 - МГТУ им. Баумана</title>
+    <script type="text/javascript" src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <header class="bmstu-header">
+        <div class="header-left">
+            <a href="index.html" class="logo-link">
+                <img src="assets/bmstu-logo.png" class="crest-mini" alt="Герб МГТУ">
+            </a>
+        </div>
+
+        <div class="header-right">
+            <div class="header-item">
+                <img src="assets/calendar.png" class="h-icon">
+                <span>6 | зн</span>
+            </div>
+            <div class="header-item">
+                <img src="assets/user.png" class="h-icon">
+                <span>Войти</span>
+            </div>
+            <div class="header-item">
+                <img src="assets/grid.png" class="h-icon">
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+            <div class="calculator-wrapper">
+                <div id="result" class="result">0</div>
+                <div class="buttons-grid">
+                    <!-- Ряд 1 -->
+                    <button id="btn_op_clear" class="my-btn secondary">C</button>
+                    <button id="btn_op_sign" class="my-btn secondary">+/-</button>
+                    <button id="btn_op_percent" class="my-btn secondary">%</button>
+                    <button id="btn_op_div" class="my-btn primary">/</button>
+
+                    <!-- Ряд 2 -->
+                    <button id="btn_digit_7" class="my-btn">7</button>
+                    <button id="btn_digit_8" class="my-btn">8</button>
+                    <button id="btn_digit_9" class="my-btn">9</button>
+                    <button id="btn_op_mult" class="my-btn primary">x</button>
+
+                    <!-- Ряд 3 -->
+                    <button id="btn_digit_4" class="my-btn">4</button>
+                    <button id="btn_digit_5" class="my-btn">5</button>
+                    <button id="btn_digit_6" class="my-btn">6</button>
+                    <button id="btn_op_minus" class="my-btn primary">-</button>
+
+                    <!-- Ряд 4 -->
+                    <button id="btn_digit_1" class="my-btn">1</button>
+                    <button id="btn_digit_2" class="my-btn">2</button>
+                    <button id="btn_digit_3" class="my-btn">3</button>
+                    <button id="btn_op_plus" class="my-btn primary">+</button>
+
+                    <!-- Ряд 5 -->
+                    <button id="btn_digit_0" class="my-btn">0</button>
+                    <button id="btn_digit_dot" class="my-btn">.</button>
+                    <button id="btn_op_equal" class="my-btn primary execute">=</button>
+                </div>
+            </div>
+    </main>
+
+    <footer class="bmstu-footer">
+        <p>ЛР выполнена: Степанов А.Д.</p>
+    </footer>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+</html>

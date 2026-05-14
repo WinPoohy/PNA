@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "UI/UX Дизайн",
+    "shortText": "Интерфейсы для ЭУ",
+    "src": "https://cdn.dribbble.com/userupload/18431093/file/original-4dd87f13b6cbc0162d0aab446ef481ac.jpg?resize=1000x600",
+    "info": "Срок выполнения: 2 недели. Работаем в Figma."
+  },
+  {
+    "id": 2,
+    "title": "Брендинг",
+    "shortText": "Логотипы МГТУ",
+    "src": "https://st.fl.ru/users/ex/express84/upload/f_6605def7245dbc92.jpg",
+    "info": "Создаем фирменный стиль и гайдлайны."
+  },
+  {
+    "id": 3,
+    "title": "3D Моделирование",
+    "shortText": "Визуализация ГЗ",
+    "src": "https://images.unsplash.com/photo-1633356122544-f134324a6cee?w=400",
+    "info": "Рендеры высокой четкости для презентаций."
+  },
+  {
+    "id": 4,
+    "src": "https://example.com/image.jpg",
+    "title": "Новый дизайн",
+    "shortText": "Краткое описание",
+    "info": "Подробная информация"
+  },
+  {
+    "id": 5,
+    "src": "https://example.com/image.jpg",
+    "title": "МГТУ1",
+    "shortText": "Краткое описание",
+    "info": "Подробная информация"
+  },
+  {
+    "id": 6,
+    "src": "https://example.com/image.jpg",
+    "title": "3МГТУ",
+    "shortText": "Краткое описание",
+    "info": "Подробная информация"
+  }
+]
